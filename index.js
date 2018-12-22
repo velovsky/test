@@ -23,6 +23,6 @@ const temp = (req, res) =>
 app.get('/*', temp);
 
 //start server
-const port = process.env.PORT || 8181;
+const port = process.env.PORT;
 app.listen(port);
 console.log("Server started on port:" + port);
